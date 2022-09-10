@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="ChromeTest">
+    
+    <parameter name="browser" value="chrome"> // add parameter tag for running cross browsing are luching chrome browser
+    
+    </parameter>
+    
+    <classes>
+      <class name="com.test.Testclass"/> 
+    </classes>
+  </test> <!-- Test -->
+  
+  
+   
+  <test thread-count="5" name="EdgeTest">
+    
+    <parameter name="browser" value="edge"> // add parameter tag for running cross browsing are luching chrome browser
+    
+    </parameter>
+    
+    <classes>
+      <class name="com.test.Testclass"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
